@@ -262,7 +262,7 @@ set number          " show line numbers
 
 " highlight current line
 set cursorline
-" set cursorcolumn
+set cursorcolumn
 
 " set foldenable
 
