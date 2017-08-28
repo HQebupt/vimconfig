@@ -112,6 +112,10 @@ Plugin 'fatih/vim-go'
 " Plugin 'vim-scripts/genutils'
 Plugin 'powerman/vim-plugin-AnsiEsc'
 
+" tmux plugin
+Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'roxma/vim-tmux-clipboard'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
