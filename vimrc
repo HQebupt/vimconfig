@@ -368,7 +368,7 @@ set t_Co=256
 
 colorscheme solarized
 
-set guifont=Monaco\ for\ Powerline:h14
+set guifont=Monaco\ for\ Powerline:h11
 
 "highlight Normal ctermfg=grey ctermbg=base03
 
