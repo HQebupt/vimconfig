@@ -1,0 +1,9 @@
+# remove w
+grep -RIins \
+--include="*.py" \
+--include="*.yml" \
+--include="*.json" \
+--include="*.sh" \
+--exclude-dir=tests \
+--color=auto \
+"$1" ./

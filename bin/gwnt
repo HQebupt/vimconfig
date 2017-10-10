@@ -1,0 +1,9 @@
+grep -RIins \
+--exclude-dir=spec \
+--exclude-dir=.publish \
+--exclude-dir=static \
+--exclude-dir=onserve \
+--exclude-dir=coverage \
+--exclude-dir=node_modules \
+--color=auto \
+"$1" ./
