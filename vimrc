@@ -10,14 +10,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim' 
+Plugin 'gmarik/Vundle.vim'
 Plugin 'moll/vim-node'                     " Tools and environment to make Vim superb for developing with Node.js. Like Rails.vim for Node.
 Plugin 'scrooloose/nerdtree'               " A tree explorer plugin for vim.
 Plugin 'Xuyuanp/nerdtree-git-plugin'       " git plugin"
 Plugin 'Raimondi/delimitMate'              " provides insert mode auto-completion for quotes, parens, brackets
 Plugin 'pangloss/vim-javascript'           " Vastly improved Javascript indentation and syntax support in Vim
 Plugin 'scrooloose/syntastic'              " Syntax checking hacks for vim
-Plugin 'xolox/vim-misc'                    " Miscellaneous auto-load Vim scripts 
+Plugin 'xolox/vim-misc'                    " Miscellaneous auto-load Vim scripts
 Plugin 'xolox/vim-colorscheme-switcher'    " Makes it easy to quickly switch between color schemes in Vim
 Plugin 'Yggdroot/indentLine'               " A Vim plugin for visually displaying indent levels in code
 Plugin 'Shougo/neocomplcache.vim'          " Ultimate auto-completion system for Vim.
@@ -50,7 +50,7 @@ set gcr=a:block-blinkon0 "禁止光标闪烁
 set wildignore+=**/node_modules/**,**/.git/,**/*.swp,*.o,*~,*.pyc,*.swp,*.bak,*.class,*.svn,*.git   "禁止在vimgrep中查找以下目录
 
 " --------------------------------------
-" 快捷键定义 
+" 快捷键定义
 " --------------------------------------
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
@@ -71,7 +71,7 @@ map <Leader>ss :source ~/.vimrc<CR>
 map <Leader>f :set foldenable<CR> "打开折叠"
 
 " -------------------------------------
-" 整行移动 
+" 整行移动
 " ------------------------------------
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
@@ -189,3 +189,10 @@ let g:indentLine_char = '|'
 let g:indentLine_color_term = 239
 map <F11> :IndentLinesToggle<CR> "开关"
 
+"""""""""""""""""""""""""""""""
+" => Plugin: indentLine
+"""""""""""""""""""""""""""""""
+highlight ExtraWhitespace ctermbg=red
+" 强制使用jk
+inoremap jk <Esc>`^:StripWhitespace<CR>
+inoremap <Esc> <Nop>
