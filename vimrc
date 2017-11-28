@@ -48,6 +48,7 @@ set ignorecase         "搜索时大小写不敏感
 set smartcase          "大写区分，小写不区分
 set gcr=a:block-blinkon0 "禁止光标闪烁
 set wildignore+=**/node_modules/**,**/.git/,**/*.swp,*.o,*~,*.pyc,*.swp,*.bak,*.class,*.svn,*.git   "禁止在vimgrep中查找以下目录
+set hidden             "允许在 有未保存的修改时切换缓冲区
 
 " --------------------------------------
 " 快捷键定义
@@ -69,6 +70,20 @@ nmap <Leader>w :w<CR>
 map <Leader>ss :source ~/.vimrc<CR>
 
 map <Leader>f :set foldenable<CR> "打开折叠"
+
+" --------------------------------------
+"操作vim缓冲区
+"Use :bn, :bp, :b #, :b name, and ctrl-6 to switch between buffers.
+" --------------------------------------
+"列出缓存区"
+nmap <Leader>ls :ls<CR>:b
+
+"跳转到下一个缓存文件"
+nmap <Leader>bn :bn<CR>
+
+"关闭buffer并从buffer列表移除(不关闭vim,即使最后一个buffer关闭)
+nmap <Leader>bd :bd<CR>
+
 
 " -------------------------------------
 " 整行移动
@@ -171,7 +186,7 @@ let NERDTreeMinimalUI=1
 "删除文件时自动删文件对应额buffer
 let NERDTreeAutoDeleteBuffer=1
 "隐藏.pyc文件
-let NERDTreeIgnore=['\.pyc$','\~$']
+let NERDTreeIgnore=['\.pyc$','\~$','\.swp$']
 
 
 " -------------------------------------
