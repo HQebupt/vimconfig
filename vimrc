@@ -71,6 +71,9 @@ map <Leader>ss :source ~/.vimrc<CR>
 
 map <Leader>f :set foldenable<CR> "打开折叠"
 
+"设置paste模式
+map <Leader>p :set paste<CR>i
+
 " --------------------------------------
 "操作vim缓冲区
 "Use :bn, :bp, :b #, :b name, and ctrl-6 to switch between buffers.
