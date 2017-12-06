@@ -6,7 +6,7 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/home/qiang/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
@@ -67,7 +67,7 @@ nmap <Leader>q :q<CR>
 "定义快捷键保存当前窗口内容
 nmap <Leader>w :w<CR>
 "及时生效vimrc 文件
-map <Leader>ss :source ~/.vimrc<CR>
+map <Leader>ss :source /home/qiang/.vimrc<CR>
 
 map <Leader>f :set foldenable<CR> "打开折叠"
 
