@@ -73,6 +73,7 @@ map <Leader>f :set foldenable<CR> "打开折叠"
 
 "设置paste模式
 map <Leader>p :set paste<CR>i
+map <Leader>np :set nopaste<CR>
 
 " --------------------------------------
 "操作vim缓冲区
@@ -190,6 +191,9 @@ let NERDTreeMinimalUI=1
 let NERDTreeAutoDeleteBuffer=1
 "隐藏.pyc文件
 let NERDTreeIgnore=['\.pyc$','\~$','\.swp$']
+" 快捷键，切换t打开的标签页
+"gt = next tab
+"gT = previous tab
 
 
 " -------------------------------------
